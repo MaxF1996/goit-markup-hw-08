@@ -858,6 +858,11 @@ body {
   color: inherit;
   background-color: transparent;
 }
+.user-info__email-input:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 100px #2f303a inset;
+          box-shadow: 0 0 0 100px #2f303a inset;
+}
 .user-info__email-input:focus {
   border: 1px solid #ffffff;
 }

@@ -25,6 +25,11 @@
   color: inherit;
   background-color: transparent;
 
+  &:-webkit-autofill {
+    -webkit-text-fill-color: $main-light-color;
+    box-shadow: 0 0 0 100px $main-dark-color inset;
+  }
+
   &:focus {
     border: 1px solid $main-light-color;
   }
