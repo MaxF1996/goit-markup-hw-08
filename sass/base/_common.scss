@@ -23,18 +23,20 @@ body {
 }
 
 .flex-container {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
 
-  &--flex-centered {
-    align-items: center;
-    justify-content: center;
-  }
-  &--baselined {
-    align-items: baseline;
-  }
-  &--big-gap {
-    column-gap: 93px;
+    &--flex-centered {
+      align-items: center;
+      justify-content: center;
+    }
+    &--baselined {
+      align-items: baseline;
+    }
+    &--big-gap {
+      column-gap: 93px;
+    }
   }
 }
 

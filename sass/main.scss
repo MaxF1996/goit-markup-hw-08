@@ -1,10 +1,13 @@
 @import './utils/vars';
+@import './utils/breakpoints';
 @import './utils/placeholders';
 @import './base/normalize';
 @import './base/my-reset';
 @import './base/common';
 @import './components/logo';
 @import './components/header';
+@import './components/menu-block-js';
+@import './components/menu-button';
 @import './components/hero-section';
 @import './components/modal-button';
 @import './pages/index/benefits';

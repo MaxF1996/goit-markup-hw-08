@@ -1,0 +1,13 @@
+.menu-button {
+  color: $logo-font-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.menu-button__icon {
+  display: block;
+  fill: currentColor;
+}

@@ -2,19 +2,38 @@
 
 .header {
   border-bottom: 1px solid $header-border-color;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    padding: calc((60px - 1px - 40px) / 2) 0;
+  }
 }
 
 .nav {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  column-gap: 93px;
+  justify-content: space-between;
+  @media screen and (min-width: $tablet) {
+    column-gap: 93px;
+  }
+}
+
+.nav__menu-button {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .nav__links-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 50px;
+  &.disabled {
+    @media screen and (max-width: calc($tablet - 1px)) {
+      display: none;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+  }
 }
 
 .nav__link {
@@ -36,17 +55,19 @@
     color: $accent-color;
   }
   &--active-link::after {
-    content: '';
+    @media screen and (min-width: $tablet) {
+      content: '';
 
-    position: absolute;
-    bottom: calc(0% - 1px);
-    left: -3px;
+      position: absolute;
+      bottom: calc(0% - 1px);
+      left: -3px;
 
-    width: calc(100% + 6px);
-    height: 4px;
+      width: calc(100% + 6px);
+      height: 4px;
 
-    background-color: $accent-color;
-    border-radius: 2px;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
   }
   &:hover,
   &:focus {
@@ -57,13 +78,25 @@
 
 .nav__contacts {
   margin-left: auto;
+  &.disabled {
+    @media screen and (max-width: calc($tablet - 1px)) {
+      display: none;
+    }
+  }
 }
 
 .contacts {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  column-gap: 50px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 50px;
+  }
 }
 
 .nav__contact {
@@ -85,8 +118,14 @@
     color: $accent-color;
     fill: currentColor;
   }
+
+  @media screen and (max-width: calc($desktop - 1px)) {
+    font-size: 12px;
+  }
 }
 
 .nav__icon-smartphone {
-  margin-bottom: 1px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 1px;
+  }
 }

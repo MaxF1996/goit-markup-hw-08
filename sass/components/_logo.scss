@@ -4,10 +4,14 @@
   font-family: $logo-font-family;
   font-weight: 700;
   font-size: $logo-font-size;
-  line-height: 1.174;
+  line-height: 1.167;
   letter-spacing: $main-letter-spacing;
 
   color: $logo-font-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: $logo-font-size-big;
+  }
 
   &--inverted-color {
     color: $main-light-color;

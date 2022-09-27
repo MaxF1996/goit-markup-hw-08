@@ -19,7 +19,16 @@
       <div class="container flex-container flex-container--flex-centered">
         <nav class="nav">
           <a class="logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-          <ul class="nav__links-list">
+          <button
+            class="menu-button nav__menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-button__icon" width="40" height="40" aria-label="Перемикач меню">
+              <use class="menu-button__burger-icon" href="./images/icons.svg#menu-burger"></use>
+            </svg>
+          </button>
+          <ul class="nav__links-list disabled">
             <li class="nav__links-item">
               <a class="nav__link" href="./index.html">Студія</a>
             </li>
@@ -31,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="nav__contacts contacts">
+        <ul class="nav__contacts contacts disabled">
           <li class="nav__contacts-item">
             <a class="nav__contact flex-container" href="mailto:info@devstudio.com">
               <svg class="icon-envelope" width="16" height="12">
@@ -51,6 +60,57 @@
         </ul>
       </div>
     </header>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-button menu-container__menu-button js-close-menu">
+        <svg class="menu-button__icon" width="40" height="40" aria-label="Перемикач меню">
+          <use class="menu-button__cross-icon" href="./images/icons.svg#menu-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-container__links-list">
+        <li class="menu-container__links-item">
+          <a class="menu-container__link" href="./index.html">Студія</a>
+        </li>
+        <li class="menu-container__links-item">
+          <a class="menu-container__link menu-container__link--active-link" href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="menu-container__links-item">
+          <a class="menu-container__link" href="./index.html">Контакти</a>
+        </li>
+      </ul>
+      <div class="menu-container__contacts">
+        <ul class="menu-container__contacts">
+          <li class="menu-container__contacts-item">
+            <a class="menu-container__contact menu-container__number" href="tel:+380961111111"
+              >+38 096 111 11 11
+            </a>
+          </li>
+          <li class="menu-container__contacts-item">
+            <a
+              class="menu-container__contact menu-container__email"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="menu-container__socials-list">
+          <li class="menu-container__socials-list-item">
+            <a class="menu-container__social-link" href="./index.html">Instagram</a>
+          </li>
+          <li class="menu-container__socials-list-item">
+            <a class="menu-container__social-link" href="./index.html">Twitter</a>
+          </li>
+          <li class="menu-container__socials-list-item">
+            <a class="menu-container__social-link" href="./index.html">Facebook</a>
+          </li>
+          <li class="menu-container__socials-list-item">
+            <a class="menu-container__social-link" href="./index.html">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <main>
       <section class="works section">
         <div class="container">
@@ -371,5 +431,12 @@
         </form>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
