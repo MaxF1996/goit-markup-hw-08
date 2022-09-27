@@ -1,0 +1,19 @@
+.logo {
+  display: inline-block;
+
+  font-family: $logo-font-family;
+  font-weight: 700;
+  font-size: $logo-font-size;
+  line-height: 1.174;
+  letter-spacing: $main-letter-spacing;
+
+  color: $logo-font-color;
+
+  &--inverted-color {
+    color: $main-light-color;
+  }
+}
+
+.logo__accent {
+  color: $accent-color;
+}

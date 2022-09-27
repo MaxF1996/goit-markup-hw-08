@@ -1,0 +1,81 @@
+/* Загальні стилі */
+
+/* * {
+  outline: 1px solid teal;
+} */
+
+body {
+  font-family: $main-font-family;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  letter-spacing: $main-letter-spacing;
+
+  color: $main-font-color;
+  background-color: $main-light-color;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--flex-centered {
+    align-items: center;
+    justify-content: center;
+  }
+  &--baselined {
+    align-items: baseline;
+  }
+  &--big-gap {
+    column-gap: 93px;
+  }
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--half-padding-bottom {
+    padding-bottom: calc(94px / 2);
+  }
+  &--half-padding-top {
+    padding-top: calc(94px / 2);
+  }
+}
+
+.section__title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: $main-letter-spacing;
+  text-align: center;
+
+  color: $title-font-color;
+}
+
+.unvisible {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.subtitle {
+  font-size: inherit;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $title-font-color;
+}

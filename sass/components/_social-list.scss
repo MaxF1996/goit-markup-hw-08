@@ -1,0 +1,42 @@
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-height: 44px;
+
+  gap: 10px;
+
+  color: $brand-main-color;
+}
+
+.social-list__link {
+  display: block;
+  padding: 12px;
+
+  color: inherit;
+
+  transition: fill $main-transition, background-color $main-transition;
+
+  fill: currentColor;
+  border-radius: 50%;
+
+  &--light-icons {
+    color: $main-light-color;
+  }
+  &--dark-bg {
+    background-color: $footer-media-bg-color;
+  }
+  &:hover,
+  &:focus {
+    fill: $main-light-color;
+
+    background-color: $accent-color;
+  }
+}
+
+.social-list__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}

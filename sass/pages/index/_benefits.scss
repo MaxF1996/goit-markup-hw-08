@@ -1,0 +1,35 @@
+/* Переваги */
+
+.benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.benefits__item {
+  flex: 0 0 calc((100% - 90px) / 4);
+}
+
+.benefits__picture {
+  padding: calc((120px - 70px) / 2) 0;
+
+  background-color: $secondary-bg-color;
+  border-radius: 4px;
+}
+
+.benefits__icon {
+  display: block;
+
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto;
+}
+
+.benefits__name {
+  margin-top: 30px;
+}
+
+.benefits__description {
+  margin-top: 10px;
+}

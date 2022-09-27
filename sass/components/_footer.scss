@@ -1,0 +1,63 @@
+/* Підвал */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $main-dark-color;
+}
+
+.footer__address-item:not(:first-child) {
+  margin-top: 6px;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address__list {
+  font-style: normal;
+}
+
+.address__contact {
+  display: inline-block;
+
+  transition: color $main-transition;
+
+  color: $contacts-font-color;
+
+  &--light-contact,
+  &:hover,
+  &:focus {
+    color: $main-light-color;
+  }
+}
+
+.footer-medias__header {
+  font-size: inherit;
+  line-height: 1.17;
+  font-weight: 700;
+  letter-spacing: $main-letter-spacing;
+  text-transform: uppercase;
+
+  color: $main-light-color;
+}
+
+.footer-medias__social-list {
+  margin-top: 20px;
+}
+
+.form-mailing {
+  color: $main-light-color;
+}
+
+.form-mailing__description {
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: $main-letter-spacing;
+  text-transform: uppercase;
+}
+
+.form-mailing__user-info {
+  margin-top: 20px;
+}

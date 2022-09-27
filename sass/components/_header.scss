@@ -1,0 +1,92 @@
+/* Шапка */
+
+.header {
+  border-bottom: 1px solid $header-border-color;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 93px;
+}
+
+.nav__links-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+}
+
+.nav__link {
+  position: relative;
+  display: block;
+
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  transition: color $main-transition;
+
+  padding-top: 32px;
+  padding-bottom: 31px;
+
+  color: $title-font-color;
+
+  &--active-link {
+    color: $accent-color;
+  }
+  &--active-link::after {
+    content: '';
+
+    position: absolute;
+    bottom: calc(0% - 1px);
+    left: -3px;
+
+    width: calc(100% + 6px);
+    height: 4px;
+
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: currentColor;
+  }
+}
+
+.nav__contacts {
+  margin-left: auto;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.nav__contact {
+  column-gap: 10px;
+  align-items: center;
+
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  transition: color $main-transition;
+
+  color: inherit;
+
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: currentColor;
+  }
+}
+
+.nav__icon-smartphone {
+  margin-bottom: 1px;
+}

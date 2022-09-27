@@ -1,0 +1,43 @@
+.checkbox {
+  position: relative;
+
+  flex: 0 0 16px;
+
+  width: 16px;
+  height: 15px;
+
+  cursor: pointer;
+}
+
+.checkbox__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon-non-check {
+  @extend %checkbox-geometry;
+
+  opacity: 1;
+  fill: $title-font-color;
+
+  transition: fill $main-transition, opacity $main-transition;
+
+  .callback-agreement__input:focus + .checkbox & {
+    fill: $accent-color;
+  }
+  .callback-agreement__input:checked + .checkbox & {
+    opacity: 0;
+  }
+}
+
+.icon-check {
+  @extend %checkbox-geometry;
+
+  opacity: 0;
+  transition: opacity $main-transition;
+
+  .callback-agreement__input:checked + .checkbox & {
+    opacity: 1;
+  }
+}

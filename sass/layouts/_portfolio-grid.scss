@@ -1,0 +1,9 @@
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-grid__list-item {
+  flex: 0 0 370px;
+}

@@ -1,0 +1,14 @@
+.overlayed-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.overlayed-list__overlayed-item {
+  position: relative;
+}
+
+.overlayed-list__name {
+  position: absolute;
+  bottom: 0;
+}

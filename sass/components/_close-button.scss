@@ -1,0 +1,48 @@
+.close-button {
+  position: relative;
+
+  display: block;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+
+  transition: border $main-transition;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    color: $accent-color;
+    background-color: currentColor;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 7.5px;
+    left: 14px;
+    width: 1px;
+    height: 12px;
+    color: $logo-font-color;
+    background-color: currentColor;
+
+    transition: background-color $main-transition;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

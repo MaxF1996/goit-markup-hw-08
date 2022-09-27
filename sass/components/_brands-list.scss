@@ -1,0 +1,37 @@
+/* Постійні клієнти */
+
+.brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.brands-list__item {
+  flex: 0 0 170px;
+}
+
+.brands-list__link {
+  display: block;
+
+  transition: color $main-transition, fill $main-transition, background-color $main-transition;
+
+  padding: calc((90px - 60px) / 2) 0;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+
+  color: $brand-main-color;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.brands-list__icon {
+  display: block;
+  margin: 0 auto;
+
+  width: 106px;
+  height: 60px;
+}
