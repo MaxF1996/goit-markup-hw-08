@@ -1,8 +1,11 @@
 .works__filters-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
+
+  @media screen and (min-width: 600px) {
+    justify-content: center;
+  }
+  gap: 15px 8px;
 }
 
 .works__filters-button {

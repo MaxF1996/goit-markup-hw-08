@@ -5,6 +5,9 @@
 
   @media screen and (max-width: calc($tablet - 1px)) {
     padding: calc((60px - 1px - 40px) / 2) 0;
+    .flex-container {
+      display: block;
+    }
   }
 }
 

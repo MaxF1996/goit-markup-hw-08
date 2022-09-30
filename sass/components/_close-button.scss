@@ -11,11 +11,6 @@
   transition: border $main-transition;
   cursor: pointer;
 
-  &:hover,
-  &:focus {
-    border: 1px solid $accent-color;
-  }
-
   &:hover::before,
   &:hover::after,
   &:focus::before,

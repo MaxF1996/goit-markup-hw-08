@@ -29,9 +29,22 @@
 }
 
 .modal {
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 450px;
+  width: calc(100% - 20px);
+  @media screen and (min-width: $tablet) {
+    min-width: 450px;
+    width: 450px;
+  }
+  @media screen and (min-width: $desktop) {
+    min-width: 528px;
+    width: 528px;
+  }
+  min-height: 520px;
+  @media screen and (min-width: $mobile) {
+    min-height: 581px;
+  }
   padding: 8px;
+  margin: 0 auto;
 
   background-color: $main-light-color;
   border-radius: 4px;
@@ -52,7 +65,16 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+
+  line-height: 1.5;
+  @media screen and (max-width: 380px) {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
+
   text-align: center;
   letter-spacing: $main-letter-spacing;
 

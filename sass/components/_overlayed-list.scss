@@ -5,6 +5,7 @@
 }
 
 .overlayed-list__overlayed-item {
+  width: calc((100% - 60px) / 3);
   position: relative;
 }
 

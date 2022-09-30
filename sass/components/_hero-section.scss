@@ -5,8 +5,11 @@
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 0;
+
+  @media screen and (min-width: $desktop) {
+    padding: 200px 0;
+  }
 
   max-width: 1600px;
 
@@ -14,20 +17,71 @@
   padding-right: 15px;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-min.jpg);
+    url(../images/hero-min-mobile.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-min-mobile2x.jpg);
+  }
+
+  @media screen and (min-width: calc($mobile + 1px)) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-min-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-min-tablet2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: calc($tablet + 1px)) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-min.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-min2x.jpg);
+    }
+  }
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .hero__title {
-  max-width: 730px;
+  max-width: 610px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 730px;
+  }
+
   margin-left: auto;
   margin-right: auto;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+
+  font-size: 26px;
+  line-height: 1.615;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;

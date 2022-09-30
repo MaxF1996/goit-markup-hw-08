@@ -37,6 +37,11 @@
   color: $title-font-color;
   resize: none;
 
+  min-height: 120px;
+  @media screen and (max-width: 462px) {
+    min-height: 65px;
+  }
+
   padding: 9px 15px;
 
   transition: border $main-transition;

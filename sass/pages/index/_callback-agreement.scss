@@ -21,6 +21,16 @@
   margin-right: 8px;
 }
 
+.callback-agreement__agreement-description {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: $main-letter-spacing;
+  @media screen and (min-width: $desktop) {
+    font-size: inherit;
+    line-height: 1.171;
+  }
+}
+
 .callback-agreement__acception-link {
   color: $accent-color;
   position: relative;

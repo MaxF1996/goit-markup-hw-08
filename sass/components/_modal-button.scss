@@ -1,7 +1,12 @@
 .button {
   display: block;
 
-  padding: 10px 32px;
+  padding: 10px 24px;
+
+  @media screen and (min-width: $desktop) {
+    padding: 10px 32px;
+  }
+
   border-radius: 4px;
 
   font-weight: 700;

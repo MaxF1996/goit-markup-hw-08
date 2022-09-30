@@ -1,9 +1,21 @@
 .portfolio-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(354px, calc((100% - 30px) / 2)));
+    grid-gap: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  }
 }
 
 .portfolio-grid__list-item {
-  flex: 0 0 370px;
+  display: block;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
 }

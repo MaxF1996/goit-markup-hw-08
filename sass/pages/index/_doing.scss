@@ -1,5 +1,11 @@
 /* Що ми робимо */
 
+.doing.disabled {
+  @media screen and (max-width: calc($desktop - 1px)) {
+    display: none;
+  }
+}
+
 .doing__list {
   margin-top: 50px;
 }
