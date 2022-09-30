@@ -34,7 +34,21 @@
   letter-spacing: $main-letter-spacing;
 
   overflow: hidden;
-  padding: 63px 24px;
+
+  padding: 77px 24px 0;
+  @media screen and (max-width: 352px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: calc($mobile - 25px)) {
+    padding: 15px 24px 5%;
+    line-height: 1.45;
+  }
+  @media screen and (min-width: $tablet) {
+    padding: 49px 24px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 63px 24px 0;
+  }
   width: 100%;
   height: 100%;
 
