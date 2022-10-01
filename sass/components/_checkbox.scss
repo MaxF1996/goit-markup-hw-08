@@ -1,21 +1,12 @@
-.checkbox {
-  position: relative;
-
-  flex: 0 0 16px;
+.checkbox-icon {
+  display: block;
 
   width: 16px;
   height: 15px;
 
+  flex: 0 0 16px;
+
   cursor: pointer;
-}
-
-.checkbox__icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
 }
 
 .icon-non-check {
@@ -26,10 +17,10 @@
 
   transition: fill $main-transition, opacity $main-transition;
 
-  .callback-agreement__input:focus + .checkbox & {
+  .callback-agreement__input:focus + .checkbox-icon & {
     fill: $accent-color;
   }
-  .callback-agreement__input:checked + .checkbox & {
+  .callback-agreement__input:checked + .checkbox-icon & {
     opacity: 0;
   }
 }
@@ -40,7 +31,7 @@
   opacity: 0;
   transition: opacity $main-transition;
 
-  .callback-agreement__input:checked + .checkbox & {
+  .callback-agreement__input:checked + .checkbox-icon & {
     opacity: 1;
   }
 }
