@@ -34,4 +34,6 @@
   .callback-agreement__input:checked + .checkbox-icon & {
     opacity: 1;
   }
+
+  fill: $accent-color;
 }
