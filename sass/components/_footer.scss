@@ -48,6 +48,10 @@
   text-align: center;
 
   color: $main-light-color;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .footer-medias__social-list {
@@ -64,6 +68,8 @@
   @media screen and (min-width: $desktop) {
     flex-grow: 1;
     flex-shrink: 1;
+
+    text-align: left;
   }
 }
 

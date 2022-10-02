@@ -1166,6 +1166,11 @@ body {
   text-align: center;
   color: #ffffff;
 }
+@media screen and (min-width: 1170px) {
+  .footer-medias__header {
+    text-align: left;
+  }
+}
 
 .footer-medias__social-list {
   margin-top: 20px;
@@ -1187,6 +1192,7 @@ body {
             flex-grow: 1;
     -ms-flex-negative: 1;
         flex-shrink: 1;
+    text-align: left;
   }
 }
 
