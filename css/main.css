@@ -355,10 +355,8 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .nav__links-list.disabled {
-    display: none;
-  }
+.nav__links-list {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .nav__links-list {
@@ -405,15 +403,15 @@ body {
   fill: currentColor;
 }
 
-.nav__contacts {
-  margin-left: auto;
-}
-@media screen and (max-width: 767px) {
-  .nav__contacts.disabled {
-    display: none;
+@media screen and (min-width: 768px) {
+  .nav__contacts {
+    margin-left: auto;
   }
 }
 
+.contacts {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .contacts {
     display: -webkit-box;
@@ -438,6 +436,27 @@ body {
     -webkit-column-gap: 50px;
        -moz-column-gap: 50px;
             column-gap: 50px;
+  }
+}
+
+.icon-envelope {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1170px) {
+  .icon-envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 14px;
+}
+@media screen and (min-width: 1170px) {
+  .icon-smartphone {
+    height: 16px;
   }
 }
 
@@ -739,9 +758,12 @@ body {
 }
 
 /* Що ми робимо */
-@media screen and (max-width: 1169px) {
-  .doing.disabled {
-    display: none;
+.doing {
+  display: none;
+}
+@media screen and (min-width: 1170px) {
+  .doing {
+    display: block;
   }
 }
 

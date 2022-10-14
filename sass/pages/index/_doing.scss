@@ -1,8 +1,9 @@
 /* Що ми робимо */
 
-.doing.disabled {
-  @media screen and (max-width: calc($desktop - 1px)) {
-    display: none;
+.doing {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
   }
 }
 
