@@ -1406,7 +1406,12 @@ body {
 }
 
 .modal__form-callback {
-  padding: 0 32px 32px;
+  padding: 0 20px 20px;
+}
+@media screen and (min-width: 480px) {
+  .modal__form-callback {
+    padding: 0 32px 32px;
+  }
 }
 
 .modal__legend {
@@ -1592,12 +1597,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 768px) {
+  .callback-agreement__label {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (min-width: 1170px) {
   .callback-agreement__label {

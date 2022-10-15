@@ -57,7 +57,10 @@
 }
 
 .modal__form-callback {
-  padding: 0 32px 32px;
+  padding: 0 20px 20px;
+  @media screen and (min-width: $mobile) {
+    padding: 0 32px 32px;
+  }
 }
 
 .modal__legend {
