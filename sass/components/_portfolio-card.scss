@@ -1,6 +1,9 @@
 .portfolio-card {
   display: block;
 
+  max-width: 450px;
+  margin: 0 auto;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;

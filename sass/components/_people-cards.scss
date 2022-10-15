@@ -12,6 +12,37 @@
 
 .people-cards__card {
   display: block;
+
+  max-width: 450px;
+
+  &:first-child {
+    margin: 0 auto;
+  }
+
+  &:not(:first-child) {
+    margin: 30px auto 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    &:first-child {
+      margin: 0 auto;
+    }
+
+    &:not(:first-child) {
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: calc($desktop - 48px)) {
+    &:first-child {
+      margin: 0;
+    }
+
+    &:not(:first-child) {
+      margin: 0;
+    }
+  }
+
   @media screen and (max-width: calc($tablet - 1px)) {
     &:not(:first-child) {
       margin-top: 30px;
