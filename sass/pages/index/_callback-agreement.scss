@@ -5,6 +5,7 @@
 .callback-agreement__label {
   display: flex;
   align-items: center;
+
   @media screen and (min-width: $tablet) {
     justify-content: center;
   }

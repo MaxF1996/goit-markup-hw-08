@@ -31,6 +31,10 @@ a {
   text-decoration: none;
 }
 
+label {
+  user-select: none;
+}
+
 fieldset,
 textarea {
   padding: 0;
