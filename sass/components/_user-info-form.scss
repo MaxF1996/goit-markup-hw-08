@@ -87,6 +87,11 @@
   &:focus {
     background-color: $active-bg-button-color;
   }
+
+  &::selection {
+    background-color: $main-light-color;
+    color: $accent-color;
+  }
 }
 
 .user-info__icon-mailing {

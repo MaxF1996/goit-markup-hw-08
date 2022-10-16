@@ -197,6 +197,15 @@ textarea {
 /* * {
   outline: 1px solid teal;
 } */
+*::-moz-selection {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+*::selection {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -702,6 +711,14 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.hero__button::-moz-selection {
+  background-color: #ffffff;
+  color: #2196f3;
+}
+.hero__button::selection {
+  background-color: #ffffff;
+  color: #2196f3;
+}
 
 .button {
   display: block;
@@ -1027,6 +1044,7 @@ body {
 }
 
 .works__filters-button {
+  display: block;
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -1384,6 +1402,14 @@ body {
 .user-info__button-submit:hover, .user-info__button-submit:focus {
   background-color: #188ce8;
 }
+.user-info__button-submit::-moz-selection {
+  background-color: #ffffff;
+  color: #2196f3;
+}
+.user-info__button-submit::selection {
+  background-color: #ffffff;
+  color: #2196f3;
+}
 
 .user-info__icon-mailing {
   width: 24px;
@@ -1701,6 +1727,14 @@ body {
 
 .callback-agreement__callback-submit {
   margin: 30px auto 0;
+}
+.callback-agreement__callback-submit::-moz-selection {
+  background-color: #ffffff;
+  color: #2196f3;
+}
+.callback-agreement__callback-submit::selection {
+  background-color: #ffffff;
+  color: #2196f3;
 }
 
 .checkbox-icon {

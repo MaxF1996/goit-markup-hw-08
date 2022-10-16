@@ -60,4 +60,9 @@
 
 .callback-agreement__callback-submit {
   margin: 30px auto 0;
+
+  &::selection {
+    background-color: $main-light-color;
+    color: $accent-color;
+  }
 }
