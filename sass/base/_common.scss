@@ -9,6 +9,10 @@
   color: $main-light-color;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 body {
   font-family: $main-font-family;
   font-size: $main-font-size;

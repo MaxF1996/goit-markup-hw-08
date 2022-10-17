@@ -206,6 +206,10 @@ textarea {
   color: #ffffff;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
