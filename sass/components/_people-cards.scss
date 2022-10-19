@@ -1,47 +1,26 @@
 .people-cards {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+
   @media screen and (min-width: $tablet) {
+    max-width: 768px;
+
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(354px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
   }
 
   @media screen and (min-width: $desktop) {
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    max-width: none;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
   }
 }
 
 .people-cards__card {
   display: block;
-
-  max-width: 450px;
-
-  &:first-child {
-    margin: 0 auto;
-  }
-
-  &:not(:first-child) {
-    margin: 30px auto 0;
-  }
-
-  @media screen and (min-width: $tablet) {
-    &:first-child {
-      margin: 0 auto;
-    }
-
-    &:not(:first-child) {
-      margin: 0 auto;
-    }
-  }
-
-  @media screen and (min-width: calc($desktop - 48px)) {
-    &:first-child {
-      margin: 0;
-    }
-
-    &:not(:first-child) {
-      margin: 0;
-    }
-  }
 
   @media screen and (max-width: calc($tablet - 1px)) {
     &:not(:first-child) {
