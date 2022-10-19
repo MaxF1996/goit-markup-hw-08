@@ -1,8 +1,8 @@
 /* Загальні стилі */
 
-/* * {
-  outline: 1px solid teal;
-} */
+// * {
+//   outline: 1px solid teal;
+// }
 
 *::selection {
   background-color: $accent-color;
@@ -33,8 +33,6 @@ body {
   @media screen and (min-width: $desktop) {
     max-width: $desktop;
   }
-
-  // max-width: $desktop;
 
   margin-left: auto;
   margin-right: auto;
