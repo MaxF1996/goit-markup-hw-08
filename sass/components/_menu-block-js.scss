@@ -16,6 +16,7 @@
   transition: transform $main-transition, opacity $main-transition;
 
   transform: translateY(-101%);
+  opacity: 0;
 
   padding: 48px 25px;
   @media screen and (min-width: calc($mobile + 1px)) {
@@ -24,6 +25,7 @@
 
   &.is-open {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
