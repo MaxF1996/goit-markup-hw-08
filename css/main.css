@@ -1496,7 +1496,6 @@ body {
 .modal {
   max-width: 450px;
   width: calc(100% - 20px);
-  min-height: 520px;
   padding: 8px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -1516,9 +1515,18 @@ body {
     width: 528px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (orientation: portrait) {
   .modal {
     min-height: 581px;
+  }
+}
+@media screen and (max-height: 767px) and (orientation: landscape) {
+  .modal {
+    overflow-y: auto;
+    height: 95%;
+    max-height: 581px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 

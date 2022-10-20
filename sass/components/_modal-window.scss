@@ -39,9 +39,15 @@
     min-width: 528px;
     width: 528px;
   }
-  min-height: 520px;
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile) and (orientation: portrait) {
     min-height: 581px;
+  }
+  @media screen and (max-height: 767px) and (orientation: landscape) {
+    overflow-y: auto;
+    height: 95%;
+    max-height: 581px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   padding: 8px;
   margin: 0 auto;
