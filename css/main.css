@@ -265,10 +265,17 @@ body {
           align-items: baseline;
 }
 .flex-container--big-gap {
-  -webkit-column-gap: 93px;
-     -moz-column-gap: 93px;
-          column-gap: 93px;
   row-gap: 60px;
+  -webkit-column-gap: 178px;
+     -moz-column-gap: 178px;
+          column-gap: 178px;
+}
+@media screen and (min-width: 1200px) {
+  .flex-container--big-gap {
+    -webkit-column-gap: 93px;
+       -moz-column-gap: 93px;
+            column-gap: 93px;
+  }
 }
 
 .section {

@@ -59,8 +59,11 @@ body {
     align-items: baseline;
   }
   &--big-gap {
-    column-gap: 93px;
     row-gap: 60px;
+    column-gap: 178px;
+    @media screen and (min-width: $desktop) {
+      column-gap: 93px;
+    }
   }
 }
 
