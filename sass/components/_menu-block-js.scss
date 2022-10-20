@@ -22,6 +22,9 @@
   @media screen and (min-width: calc($mobile + 1px)) {
     padding: 48px 0;
   }
+  @media screen and (max-height: 767px) {
+    padding: 48px 25px 25px;
+  }
 
   &.is-open {
     transform: translateY(0);
@@ -55,6 +58,9 @@
   &__links-item:not(:first-child),
   &__contacts-item:not(:first-child) {
     margin-top: 32px;
+    @media screen and (max-height: 767px) {
+      margin-top: 10px;
+    }
   }
 
   &__link {
@@ -73,11 +79,18 @@
     &--active-link {
       color: $accent-color;
     }
+    @media screen and (max-height: 767px) {
+      font-size: 25px;
+    }
   }
 
   &__contacts {
     font-weight: 500;
     letter-spacing: 0.02em;
+
+    @media screen and (max-height: 767px) {
+      margin-top: 10px;
+    }
   }
 
   &__contacts-item {
@@ -96,6 +109,9 @@
     @media screen and (max-width: calc($mobile - 100px)) {
       font-size: 25px;
     }
+    @media screen and (max-height: 767px) {
+      font-size: 18px;
+    }
   }
 
   &__email {
@@ -104,6 +120,9 @@
     font-size: 24px;
     line-height: 1.167;
     letter-spacing: 0.02em;
+    @media screen and (max-height: 767px) {
+      font-size: 18px;
+    }
   }
 
   &__socials-list {
@@ -122,8 +141,8 @@
       font-size: 15px;
     }
 
-    @media screen and (max-width: 325px) {
-      margin-top: 35px;
+    @media screen and (max-height: 767px) {
+      margin-top: 25px;
     }
   }
 
