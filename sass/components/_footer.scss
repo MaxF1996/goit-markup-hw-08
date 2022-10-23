@@ -14,7 +14,10 @@
 }
 
 .footer__address-item:not(:first-child) {
-  margin-top: 6px;
+  margin-top: 5px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 6px;
+  }
 }
 
 .address {
@@ -41,7 +44,7 @@
 
 .footer-medias__header {
   font-size: inherit;
-  line-height: 1.17;
+  line-height: 1.14;
   font-weight: 700;
   letter-spacing: $main-letter-spacing;
   text-transform: uppercase;
@@ -74,8 +77,10 @@
 }
 
 .form-mailing__description {
+  display: block;
+
   font-weight: 700;
-  line-height: 1.17;
+  line-height: 1.14;
   letter-spacing: $main-letter-spacing;
   text-transform: uppercase;
 }

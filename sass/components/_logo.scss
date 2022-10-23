@@ -1,10 +1,17 @@
 .logo {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: $desktop) {
+    justify-content: flex-start;
+  }
 
   font-family: $logo-font-family;
   font-weight: 700;
   font-size: $logo-font-size;
   line-height: 1.167;
+  @media screen and (min-width: $desktop) {
+    line-height: 1.192;
+  }
   letter-spacing: $main-letter-spacing;
 
   color: $logo-font-color;
@@ -20,4 +27,5 @@
 
 .logo__accent {
   color: $accent-color;
+  line-height: inherit;
 }
