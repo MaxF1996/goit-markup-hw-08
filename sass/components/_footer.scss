@@ -79,6 +79,11 @@
 .form-mailing__description {
   display: flex;
   justify-content: center;
+  @media screen and (max-width: calc($desktop - 1px)) {
+    justify-content: flex-start;
+  }
+
+  justify-content: center;
 
   font-weight: 700;
   line-height: 1.14;
