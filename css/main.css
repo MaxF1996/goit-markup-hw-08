@@ -1373,7 +1373,7 @@ body {
 }
 
 .form-mailing__description {
-  display: block;
+  display: inline-block;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
